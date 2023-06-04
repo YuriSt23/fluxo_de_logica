@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Escolha sua Área de estudos</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    const area = prompt("você quer seguri para área de front-end ou back-end?");
+    let linguagem = "";
+    if(area == "front-end") {
+        linguagem = prompt("Você quer aprender react ou vue?");
+
+    } else if(area == "back-end") {
+        linguagem = prompt("Você quer aprender C# ou Java?");
+
+    } else {
+        alert("Você não digitou uma respota válida");
+
+    }
+    const especialidadeOuFullstack = prompt("Digite 1 se você quer seguir com a especialização ou 2 se quer fazer fullStack")
+    if(especialidadeOuFullstack == 1) {
+        alert("continue se especializando em " + linguagem + " para dominar a " + area + "!");
+
+    } else if(especialidadeOuFullstack == 2) {
+        alert("chegou a hora de aprender outra linguagem além de " + linguagem + " se você quer ser tornar FullStack");
+
+    } else {
+        alert("você não digitou um valor válido!");
+    }
+
+    let msg = prompt("Tem alguma outra linguagem que gostaria de aprender? Digite 'ok' para continuar");
+    while(msg == "ok") {
+        let novaTecnologia = prompt("Qual?");
+        alert(novaTecnologia + ' é realmente uma técnologia muito legal!');
+        msg = prompt('tem mais alguma outra tecnologia que gostaria de aprender? Digite "ok" se sim');
+    }
+</script>
